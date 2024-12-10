@@ -1,3 +1,6 @@
+#ifndef Rectangle_HPP
+#define Rectangle_HPP
+
 #include <iostream>
 
 class Rectangle {
@@ -14,3 +17,5 @@ public:
     std::cout << x << " " << y << " " << w << " " << h << std::endl;
   }
 };
+
+#endif

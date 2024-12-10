@@ -1,3 +1,6 @@
+#ifndef Cercle_HPP
+#define Cercle_HPP
+
 #include <iostream>
 
 class Cercle {
@@ -15,3 +18,5 @@ public:
     std::cout << x << " " << y << " " << w << " " << h << std::endl;
   }
 };
+
+#endif
