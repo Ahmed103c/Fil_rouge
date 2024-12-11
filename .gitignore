@@ -1,4 +1,3 @@
 main
 cpp4
-*.o
-*.d
+/build
