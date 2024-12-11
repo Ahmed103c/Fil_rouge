@@ -17,6 +17,7 @@ public:
   Rectangle() : Rectangle(0, 0, 0, 0) {}
   std::string toString() {
     std::cout << x << " " << y << " " << w << " " << h << std::endl;
+    return "";
   }
 };
 

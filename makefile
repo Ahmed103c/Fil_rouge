@@ -4,7 +4,7 @@ CXX=g++
 EXE=cpp4
 
 #decommentez le flag std avec clang++ sous mac m1
-CXXFLAGS+=-Wall -Wextra -MMD -g -O2 #-std=c++11
+CXXFLAGS+=-Wall -Wextra -Werror -MMD -g -O2 #-std=c++11
 LDFLAGS= #-lSDL
 
 OBJ=$(addprefix build/,$(SRC:.cpp=.o))
