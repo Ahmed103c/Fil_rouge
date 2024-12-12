@@ -18,13 +18,18 @@ public:
   Forme(Point pointForme_, COULEURS couleur_);
   Forme();
   Point &getPoint() { return pointForme; };
- 
+  // Point const& get () const; ???
 
   COULEURS getCouleur() { return couleur; };
+  int getLargeur() { return w; }
+  int getHauteur() { return h; }
 
   void setX(int a);
   void setY(int b);
   void setCouleur(COULEURS couleur_);
+  int getId() { return id; }
+  static int prochainId();
+  int id;
 };
 
 #endif
