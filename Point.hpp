@@ -1,3 +1,5 @@
+#ifndef Point_HPP
+#define Point_HPP
 #include <iostream>
 
 class Point {
@@ -15,3 +17,4 @@ public:
 
   static Point ORIGINE;
 };
+#endif

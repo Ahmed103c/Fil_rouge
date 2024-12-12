@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 
+#include "Forme.hpp"
 #include "Point.hpp"
 #include "Rectangle.hpp"
 #include "catch.hpp"
@@ -53,50 +54,44 @@ TEST_CASE("Compteur", "[Forme]") {
 }
 */
 
-/*
 TEST_CASE("Instanciation1", "[Forme]") {
-        Forme f1;
-        REQUIRE(f1.getPoint().getX() == 0);
-        REQUIRE(f1.getPoint().getY() == 0);
-        REQUIRE(f1.getCouleur() ==  COULEURS::BLEU);
+  Forme f1;
+  REQUIRE(f1.getPoint().getX() == 0);
+  REQUIRE(f1.getPoint().getY() == 0);
+  REQUIRE(f1.getCouleur() == COULEURS::BLEU);
 }
-*/
 
-/*
 TEST_CASE("Instanciation2", "[Forme]") {
-        Forme f2;
+  Forme f2;
 
-        f2.setX(15);
-        f2.setY(25);
-        f2.setCouleur(COULEURS::VERT);
-        REQUIRE (f2.getPoint().getX() == 15);
-        REQUIRE (f2.getPoint().getY() == 25);
-        REQUIRE (f2.getCouleur() == COULEURS::VERT);
-        REQUIRE_FALSE (f2.getCouleur() == COULEURS::BLEU);
-        REQUIRE_FALSE (f2.getCouleur() == COULEURS::ROUGE);
-        REQUIRE_FALSE (f2.getCouleur() == COULEURS::JAUNE);
+  f2.setX(15);
+  f2.setY(25);
+  f2.setCouleur(COULEURS::VERT);
+  REQUIRE(f2.getPoint().getX() == 15);
+  REQUIRE(f2.getPoint().getY() == 25);
+  REQUIRE(f2.getCouleur() == COULEURS::VERT);
+  REQUIRE_FALSE(f2.getCouleur() == COULEURS::BLEU);
+  REQUIRE_FALSE(f2.getCouleur() == COULEURS::ROUGE);
+  REQUIRE_FALSE(f2.getCouleur() == COULEURS::JAUNE);
 }
-*/
 
-/*
 TEST_CASE("Instanciation3", "[Forme]") {
-    // IL N'Y A PAS D'ERREUR DANS LE TEST, CELA DOIT MARCHER
-        Forme f2(Point(10,20), COULEURS::ROUGE);
-        REQUIRE (f2.getPoint().getX() == 10);
-        REQUIRE (f2.getPoint().getY() == 20);
-        REQUIRE (f2.getCouleur() == COULEURS::ROUGE);
-        REQUIRE_FALSE (f2.getCouleur() == COULEURS::BLEU);
+  // IL N'Y A PAS D'ERREUR DANS LE TEST, CELA DOIT MARCHER
+  Forme f2(Point(10, 20), COULEURS::ROUGE);
+  REQUIRE(f2.getPoint().getX() == 10);
+  REQUIRE(f2.getPoint().getY() == 20);
+  REQUIRE(f2.getCouleur() == COULEURS::ROUGE);
+  REQUIRE_FALSE(f2.getCouleur() == COULEURS::BLEU);
 
-        f2.getPoint().setX(15);
-        f2.getPoint().setY(25);
-        f2.setCouleur(COULEURS::JAUNE);
-        REQUIRE (f2.getPoint().getX() == 15);
-        REQUIRE (f2.getPoint().getY() == 25);
-        REQUIRE (f2.getCouleur() == COULEURS::JAUNE);
-        REQUIRE_FALSE (f2.getCouleur() == COULEURS::BLEU);
-        REQUIRE_FALSE (f2.getCouleur() == COULEURS::ROUGE);
+  f2.getPoint().setX(15);
+  f2.getPoint().setY(25);
+  f2.setCouleur(COULEURS::JAUNE);
+  REQUIRE(f2.getPoint().getX() == 15);
+  REQUIRE(f2.getPoint().getY() == 25);
+  REQUIRE(f2.getCouleur() == COULEURS::JAUNE);
+  REQUIRE_FALSE(f2.getCouleur() == COULEURS::BLEU);
+  REQUIRE_FALSE(f2.getCouleur() == COULEURS::ROUGE);
 }
-*/
 
 /*
 TEST_CASE("BoiteEnglobante", "[Forme]") {
