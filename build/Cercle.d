@@ -1,1 +1,1 @@
-build/Cercle.o: Cercle.cpp Cercle.hpp
+build/Cercle.o: Cercle.cpp Cercle.hpp Forme.hpp Point.hpp

@@ -1,10 +1,10 @@
-#include <fstream>
-#include <iostream>
-
+#include "Cercle.hpp"
 #include "Forme.hpp"
 #include "Point.hpp"
 #include "Rectangle.hpp"
 #include "catch.hpp"
+#include <fstream>
+#include <iostream>
 
 // NOTE : ce test utilise des enum "class"
 // il faut donc utiliser un compilateur g++ >= 6.1
@@ -96,3 +96,33 @@ TEST_CASE("BoiteEnglobante", "[Forme]") {
   REQUIRE(f.getLargeur() == 0);
   REQUIRE(f.getHauteur() == 0);
 }
+/*
+// Cercle et Rectangle
+TEST_CASE("Cercle", "[Cercle]") {
+  int compteur = Forme::prochainId();
+  Cercle c1;
+  Cercle c2(...);
+
+  REQUIRE(c1.toString() == ".....");
+  REQUIRE(c2.toString() == ".....");
+
+  c2.setRayon(...);
+  REQUIRE(c2.getRayon() == "...");
+  REQUIRE(c2.toString() == ".....");
+  REQUIRE(c2.getLargeur() == ".....");
+  REQUIRE(c2.getHauteur() == ".....");
+
+  REQUIRE(Forme::prochainId() == (compteur + 2));
+}
+
+TEST_CASE("Polymorphisme", "[Forme]") {
+  Forme *f1 = new Cercle;
+  Forme *f2 = new Rectangle;
+
+  REQUIRE(f1->toString() == ".....");
+  REQUIRE(f2->toString() == ".....");
+
+  delete f1;
+  delete f2;
+}
+*/
